@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Level;
 use App\Models\Location;
+use App\Models\Perfil;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,18 +19,19 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         User::factory()->count(5)->create();
+    
         Level::factory()->create(['nombre' => 'Plata']);
         Level::factory()->create(['nombre' => 'Oro']);
         Level::factory()->create(['nombre' => 'Bronce']);
 
         
-        Perfil::factory()->create(['pais' => 'Perfil1','user_id' => '1']);
-        Perfil::factory()->create(['pais' => 'Perfil2','user_id' => '2']);
-        Perfil::factory()->create(['pais' => 'Perfil3','user_id' => '3']);
+        Perfil::factory()->create(['nombre' => 'Perfil1','user_id' => '1']);
+        Perfil::factory()->create(['nombre' => 'Perfil2','user_id' => '2']);
+        Perfil::factory()->create(['nombre' => 'Perfil3','user_id' => '3']);
         
-        /* Location::factory()->create(['nombre' => 'Ecuador']);
-        Location::factory()->create(['nombre' => 'Chile']);
-        Location::factory()->create(['nombre' => 'Europa']); */
+        /* Location::factory()->create(['pais' => 'Ecuador']);
+        Location::factory()->create(['pais' => 'Chile']);
+        Location::factory()->create(['pais' => 'Europa']); */
         
         /* 
         \App\Models\User::factory()->count(5)->create()->each(

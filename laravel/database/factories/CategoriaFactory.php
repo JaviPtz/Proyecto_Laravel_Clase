@@ -23,7 +23,7 @@ class CategoriaFactory extends Factory
     {
         return [
             //llene aleatoriamente las tablas que contenga el campo name
-            'nombre'=>$this->$faker->work
+            'nombre'=>$this->faker->work
         ];
     }
 }

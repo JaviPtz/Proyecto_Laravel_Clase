@@ -23,8 +23,8 @@ class PerfilFactory extends Factory
     {
         return [
             //llene aleatoriamente las tablas que contenga el campo name
-            'nombre'=>$this->$faker->name,
-            /* 'user_id'=>$this->$faker->user_id */
+            'nombre'=>$this->faker->name,
+            /* 'user_id'=>$this->faker->user_id */
 
         ];
     }

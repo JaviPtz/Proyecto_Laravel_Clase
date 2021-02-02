@@ -23,7 +23,7 @@ class GroupFactory extends Factory
     {
         return [
             //llene aleatoriamente las tablas que contenga el campo name
-            'nombre'=>$this->$faker->name
+            'nombre'=>$this->faker->name
         ];
     }
 }

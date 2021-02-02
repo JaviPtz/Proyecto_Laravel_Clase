@@ -23,7 +23,7 @@ class LocationFactory extends Factory
     {
         return [
             //llene aleatoriamente las tablas que contenga el campo name
-            'pais'=>$this->$faker->country
+            'pais'=>$this->faker->country
 
         ];
     }

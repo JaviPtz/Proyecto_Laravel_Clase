@@ -22,8 +22,7 @@ class LevelFactory extends Factory
     public function definition()
     {
         return [
-            //llene aleatoriamente las tablas que contenga el campo name
-            'nombre'=>$this->$faker->work
+            //llene aleatoriamente las tablas que contenga el campo nombre
         ];
     }
 }

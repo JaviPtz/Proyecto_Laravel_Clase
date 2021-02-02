@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddLavelInUser extends Migration
+class AddLevelInUser extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,7 @@ class AddLavelInUser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //añadiendo la clave foranea
-            $table->bigInteger('level_id')->after('id')->unsigned();;
+            $table->bigInteger('level_id')->after('id')->nullable();
             $table->foreign('level_id')->references('id')->on('levels')
                 ->onDelete('cascade')->onUpdate('cascade');;
         });
